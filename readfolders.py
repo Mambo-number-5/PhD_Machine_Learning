@@ -7,14 +7,15 @@ import sys
 from pprint import pprint
 import time
 from functools import wraps
-from sklearn.metrics import roc_curve, accuracy_score, f1_score, auc, confusion_matrix, classification_report
+from sklearn.metrics import confusion_matrix, classification_report
+# from sklearn.metrics import roc_curve, accuracy_score, f1_score, auc
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from imblearn.over_sampling import SMOTE, ADASYN
 # from imblearn.ensemble import BalancedRandomForestClassifier
 from imblearn.under_sampling import ClusterCentroids, EditedNearestNeighbours
 from imblearn.combine import SMOTEENN
-from sklearn.cluster import KMeans
+# from sklearn.cluster import KMeans
 import torch
 from torchvision import transforms
 
@@ -371,8 +372,9 @@ def _getdefsprop(defects: set) -> dict:
 
     filtdefs = dict()
     choice = 1000
+    choice_str = "The defects to filter in dataset can be added (or removed) to filter by typing the above options..."
     while choice != 0:
-        choice = input('The defects to filter in dataset can be added (or removed) to filter by typing the above options...')
+        choice = input(choice_str)
         try:
             choice = int(choice.strip())
             if choice > len(dictdefs) + 2:
@@ -422,20 +424,21 @@ def getx(chemistr: pd.DataFrame, vdpres: pd.DataFrame, labs: pd.Series, on_iba: 
 
 
 def get_feature_correlation(df: pd.DataFrame, top_n: int or None = None, corr_method: str = 'spearman',
-                            remove_duplicates: bool = True, remove_self_correlations: bool = True, unsigned: bool = True):
+                            remove_duplicates: bool = True, remove_self_correlations: bool = True,
+                            unsigned: bool = True):
     """
     Compute the feature correlation and sort feature pairs based on their correlation
 
     :param df: The dataframe with the predictor variables
     :type df: pandas.core.frame.DataFrame
-    :param top_n: Top N feature pairs to be reported (if None, all of the pairs will be returned)
-    :param corr_method: Correlation compuation method
+    :param top_n: Top N feature pairs to be reported (if None, all the pairs will be returned)
+    :param corr_method: Correlation computation method
     :type corr_method: str
     :param remove_duplicates: Indicates whether duplicate features must be removed
     :type remove_duplicates: bool
     :param remove_self_correlations: Indicates whether self correlations will be removed
     :type remove_self_correlations: bool
-    :param unsigned: Indicates whether use the absolute value of the correlation
+    :param unsigned: Indicates the use the absolute value of the correlation
     :type remove_self_correlations: bool
     :return: pandas.core.frame.DataFrame
     """
@@ -476,6 +479,7 @@ def generate_clean_dataset(from_date: str = "", timeseries: bool or None = None,
         var0 = [s for s in x.columns if x[s].var() is not pd.NA and x[s].var() == 0]
         x.drop(var0, axis=1, inplace=True)
         if timeseries:
+            i = 0
             for i, j in enumerate(x.columns):
                 if j[0] == '[':
                     break
@@ -538,7 +542,7 @@ def output_classification(y_te, predictions):
     return msg_out
 
 
-def gridsearchcv_out(x_te, y_te, trained_grid: GridSearchCV, parameters, defect: str):
+def gridsearch_cv_out(x_te, y_te, trained_grid: GridSearchCV, parameters, defect: str):
     msg_before_test = report_gridsearch_cv_hyperparameters(trained_grid, parameters, defect)
     print(msg_before_test)
     grid_predictions = trained_grid.predict(x_te)
@@ -574,8 +578,12 @@ class CustomDataset(torch.utils.data.Dataset):
         return len(self.data)
 
 
-def generate_custom_datasets(from_date: str = "", time_series: bool = False, build_interactive_filt: bool = False, filter_defs: dict or None = None, merge_chem_on_iba: bool = False, clean: bool = True) -> [CustomDataset, CustomDataset]:
-    x, y = generate_clean_dataset(from_date=from_date, timeseries=time_series, build_interactive_filt=build_interactive_filt, filter_defs=filter_defs, merge_chem_on_iba=merge_chem_on_iba, clean=clean)
+def generate_custom_datasets(from_date: str = "", time_series: bool = False, build_interactive_filt: bool = False,
+                             filter_defs: dict or None = None, merge_chem_on_iba: bool = False, clean: bool = True
+                             ) -> [CustomDataset, CustomDataset]:
+    x, y = generate_clean_dataset(from_date=from_date, timeseries=time_series,
+                                  build_interactive_filt=build_interactive_filt, filter_defs=filter_defs,
+                                  merge_chem_on_iba=merge_chem_on_iba, clean=clean)
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0, stratify=y)
 
