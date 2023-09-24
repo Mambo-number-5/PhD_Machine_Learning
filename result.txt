@@ -1,0 +1,3113 @@
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\Scripts\python.exe C:/Users/Perseo/Documents/Ciuffetti/Script_nuovi_dati_ML/clean_SVM.py
+2023-05-16 17:50:49,921 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-01_seq_1',) {'whole': None} Took 0.2340 seconds
+2023-05-16 17:50:50,046 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-02_seq_1',) {'whole': None} Took 0.1233 seconds
+2023-05-16 17:50:50,140 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-03_seq_0',) {'whole': None} Took 0.1027 seconds
+2023-05-16 17:50:50,265 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-03_seq_1',) {'whole': None} Took 0.1148 seconds
+2023-05-16 17:50:50,374 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-03_seq_2',) {'whole': None} Took 0.1103 seconds
+2023-05-16 17:50:50,484 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-04_seq_0',) {'whole': None} Took 0.1133 seconds
+2023-05-16 17:50:50,593 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-05_seq_1',) {'whole': None} Took 0.1056 seconds
+2023-05-16 17:50:50,703 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-05_seq_3',) {'whole': None} Took 0.1133 seconds
+2023-05-16 17:50:50,812 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-06_seq_0',) {'whole': None} Took 0.1139 seconds
+2023-05-16 17:50:50,937 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-06_seq_1',) {'whole': None} Took 0.1175 seconds
+2023-05-16 17:50:51,046 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-06_seq_2',) {'whole': None} Took 0.1124 seconds
+2023-05-16 17:50:51,156 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-07_seq_1',) {'whole': None} Took 0.1128 seconds
+2023-05-16 17:50:51,265 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-07_seq_2',) {'whole': None} Took 0.1032 seconds
+2023-05-16 17:50:51,359 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-07_seq_3',) {'whole': None} Took 0.0962 seconds
+2023-05-16 17:50:51,468 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-08_seq_1',) {'whole': None} Took 0.1085 seconds
+2023-05-16 17:50:51,578 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-08_seq_2',) {'whole': None} Took 0.1030 seconds
+2023-05-16 17:50:51,671 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-09_seq_0',) {'whole': None} Took 0.1002 seconds
+2023-05-16 17:50:51,765 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-09_seq_1',) {'whole': None} Took 0.0848 seconds
+2023-05-16 17:50:51,859 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-09_seq_2',) {'whole': None} Took 0.0976 seconds
+2023-05-16 17:50:51,968 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-10_seq_1',) {'whole': None} Took 0.1166 seconds
+2023-05-16 17:50:52,093 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-11_seq_1',) {'whole': None} Took 0.1121 seconds
+2023-05-16 17:50:52,187 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-11_seq_2',) {'whole': None} Took 0.0918 seconds
+2023-05-16 17:50:52,296 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-12_seq_0',) {'whole': None} Took 0.1088 seconds
+2023-05-16 17:50:52,390 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-12_seq_1',) {'whole': None} Took 0.0954 seconds
+2023-05-16 17:50:52,499 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-12_seq_2',) {'whole': None} Took 0.1085 seconds
+2023-05-16 17:50:52,593 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-13_seq_0',) {'whole': None} Took 0.0989 seconds
+2023-05-16 17:50:52,687 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-13_seq_1',) {'whole': None} Took 0.0864 seconds
+2023-05-16 17:50:52,781 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-14_seq_0',) {'whole': None} Took 0.1005 seconds
+2023-05-16 17:50:52,890 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-14_seq_1',) {'whole': None} Took 0.1066 seconds
+2023-05-16 17:50:52,999 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-14_seq_2',) {'whole': None} Took 0.1079 seconds
+2023-05-16 17:50:53,077 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-15_seq_2',) {'whole': None} Took 0.0866 seconds
+2023-05-16 17:50:53,171 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-15_seq_3',) {'whole': None} Took 0.0927 seconds
+2023-05-16 17:50:53,296 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-16_seq_1',) {'whole': None} Took 0.1225 seconds
+2023-05-16 17:50:53,421 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-16_seq_2',) {'whole': None} Took 0.1195 seconds
+2023-05-16 17:50:53,531 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-16_seq_3',) {'whole': None} Took 0.1174 seconds
+2023-05-16 17:50:53,624 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-17_seq_0',) {'whole': None} Took 0.0950 seconds
+2023-05-16 17:50:53,734 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-17_seq_1',) {'whole': None} Took 0.0984 seconds
+2023-05-16 17:50:53,828 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-17_seq_2',) {'whole': None} Took 0.1052 seconds
+2023-05-16 17:50:53,937 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-18_seq_0',) {'whole': None} Took 0.1035 seconds
+2023-05-16 17:50:54,046 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-18_seq_1',) {'whole': None} Took 0.1107 seconds
+2023-05-16 17:50:54,140 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-18_seq_2',) {'whole': None} Took 0.0923 seconds
+2023-05-16 17:50:54,249 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-19_seq_1',) {'whole': None} Took 0.1034 seconds
+2023-05-16 17:50:54,343 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-20_seq_0',) {'whole': None} Took 0.0958 seconds
+2023-05-16 17:50:54,437 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-20_seq_1',) {'whole': None} Took 0.0987 seconds
+2023-05-16 17:50:54,546 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-20_seq_2',) {'whole': None} Took 0.0981 seconds
+2023-05-16 17:50:54,640 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-23_seq_1',) {'whole': None} Took 0.0985 seconds
+2023-05-16 17:50:54,843 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-23_seq_2',) {'whole': None} Took 0.2094 seconds
+2023-05-16 17:50:54,953 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-24_seq_1',) {'whole': None} Took 0.1053 seconds
+2023-05-16 17:50:55,078 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-24_seq_2',) {'whole': None} Took 0.1155 seconds
+2023-05-16 17:50:55,171 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-25_seq_0',) {'whole': None} Took 0.1040 seconds
+2023-05-16 17:50:55,281 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-25_seq_1',) {'whole': None} Took 0.1130 seconds
+2023-05-16 17:50:55,390 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-25_seq_2',) {'whole': None} Took 0.0957 seconds
+2023-05-16 17:50:55,484 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-25_seq_3',) {'whole': None} Took 0.0998 seconds
+2023-05-16 17:50:55,578 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-26_seq_1',) {'whole': None} Took 0.0909 seconds
+2023-05-16 17:50:55,671 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-26_seq_2',) {'whole': None} Took 0.0915 seconds
+2023-05-16 17:50:55,781 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-27_seq_0',) {'whole': None} Took 0.1068 seconds
+2023-05-16 17:50:55,874 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-27_seq_2',) {'whole': None} Took 0.1021 seconds
+2023-05-16 17:50:55,968 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-28_seq_0',) {'whole': None} Took 0.0912 seconds
+2023-05-16 17:50:56,078 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-28_seq_2',) {'whole': None} Took 0.1045 seconds
+2023-05-16 17:50:56,171 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-29_seq_0',) {'whole': None} Took 0.1000 seconds
+2023-05-16 17:50:56,281 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-29_seq_3',) {'whole': None} Took 0.1057 seconds
+2023-05-16 17:50:56,390 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-29_seq_4',) {'whole': None} Took 0.1029 seconds
+2023-05-16 17:50:56,499 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-31_seq_0',) {'whole': None} Took 0.1089 seconds
+2023-05-16 17:50:56,609 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-05-31_seq_1',) {'whole': None} Took 0.1116 seconds
+2023-05-16 17:50:56,703 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-01_seq_0',) {'whole': None} Took 0.0935 seconds
+2023-05-16 17:50:56,796 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-01_seq_2',) {'whole': None} Took 0.0935 seconds
+2023-05-16 17:50:56,906 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-02_seq_0',) {'whole': None} Took 0.1184 seconds
+2023-05-16 17:50:57,031 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-02_seq_2',) {'whole': None} Took 0.1127 seconds
+2023-05-16 17:50:57,140 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-03_seq_0',) {'whole': None} Took 0.1157 seconds
+2023-05-16 17:50:57,234 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-03_seq_1',) {'whole': None} Took 0.0992 seconds
+2023-05-16 17:50:57,343 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-03_seq_2',) {'whole': None} Took 0.1047 seconds
+2023-05-16 17:50:57,437 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-04_seq_3',) {'whole': None} Took 0.0966 seconds
+2023-05-16 17:50:57,546 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-04_seq_4',) {'whole': None} Took 0.1039 seconds
+2023-05-16 17:50:57,656 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-05_seq_0',) {'whole': None} Took 0.1096 seconds
+2023-05-16 17:50:57,765 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-05_seq_3',) {'whole': None} Took 0.1076 seconds
+2023-05-16 17:50:57,859 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-05_seq_4',) {'whole': None} Took 0.1035 seconds
+2023-05-16 17:50:57,953 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-06_seq_2',) {'whole': None} Took 0.0900 seconds
+2023-05-16 17:50:58,062 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-07_seq_1',) {'whole': None} Took 0.1070 seconds
+2023-05-16 17:50:58,156 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-07_seq_2',) {'whole': None} Took 0.0987 seconds
+2023-05-16 17:50:58,249 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-08_seq_3',) {'whole': None} Took 0.0903 seconds
+2023-05-16 17:50:58,359 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-09_seq_0',) {'whole': None} Took 0.1034 seconds
+2023-05-16 17:50:58,468 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-09_seq_2',) {'whole': None} Took 0.1135 seconds
+2023-05-16 17:50:58,578 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-10_seq_2',) {'whole': None} Took 0.1100 seconds
+2023-05-16 17:50:58,687 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-10_seq_3',) {'whole': None} Took 0.1007 seconds
+2023-05-16 17:50:58,765 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-12_seq_0',) {'whole': None} Took 0.0894 seconds
+2023-05-16 17:50:58,859 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-12_seq_2',) {'whole': None} Took 0.0900 seconds
+2023-05-16 17:50:58,968 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-13_seq_1',) {'whole': None} Took 0.1044 seconds
+2023-05-16 17:50:59,078 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-13_seq_2',) {'whole': None} Took 0.1060 seconds
+2023-05-16 17:50:59,171 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-14_seq_0',) {'whole': None} Took 0.0933 seconds
+2023-05-16 17:50:59,265 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-14_seq_1',) {'whole': None} Took 0.1024 seconds
+2023-05-16 17:50:59,374 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-14_seq_2',) {'whole': None} Took 0.1055 seconds
+2023-05-16 17:50:59,484 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-15_seq_4',) {'whole': None} Took 0.1034 seconds
+2023-05-16 17:50:59,593 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-16_seq_1',) {'whole': None} Took 0.1068 seconds
+2023-05-16 17:50:59,671 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-16_seq_2',) {'whole': None} Took 0.0904 seconds
+2023-05-16 17:50:59,781 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-17_seq_0',) {'whole': None} Took 0.1077 seconds
+2023-05-16 17:50:59,890 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-17_seq_2',) {'whole': None} Took 0.1081 seconds
+2023-05-16 17:50:59,984 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-18_seq_0',) {'whole': None} Took 0.0969 seconds
+2023-05-16 17:51:00,093 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-18_seq_1',) {'whole': None} Took 0.1037 seconds
+2023-05-16 17:51:00,187 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-19_seq_0',) {'whole': None} Took 0.0874 seconds
+2023-05-16 17:51:00,296 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-19_seq_1',) {'whole': None} Took 0.1095 seconds
+2023-05-16 17:51:00,390 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-20_seq_0',) {'whole': None} Took 0.1027 seconds
+2023-05-16 17:51:00,484 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-20_seq_4',) {'whole': None} Took 0.0953 seconds
+2023-05-16 17:51:00,593 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-21_seq_0',) {'whole': None} Took 0.0946 seconds
+2023-05-16 17:51:00,687 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-23_seq_1',) {'whole': None} Took 0.1028 seconds
+2023-05-16 17:51:00,781 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-23_seq_2',) {'whole': None} Took 0.0878 seconds
+2023-05-16 17:51:00,890 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-24_seq_0',) {'whole': None} Took 0.1155 seconds
+2023-05-16 17:51:00,999 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-24_seq_2',) {'whole': None} Took 0.1095 seconds
+2023-05-16 17:51:01,109 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-25_seq_1',) {'whole': None} Took 0.1079 seconds
+2023-05-16 17:51:01,203 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-26_seq_0',) {'whole': None} Took 0.0987 seconds
+2023-05-16 17:51:01,328 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-27_seq_3',) {'whole': None} Took 0.1146 seconds
+2023-05-16 17:51:01,437 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-28_seq_1',) {'whole': None} Took 0.1121 seconds
+2023-05-16 17:51:01,546 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-28_seq_2',) {'whole': None} Took 0.1130 seconds
+2023-05-16 17:51:01,687 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-28_seq_3',) {'whole': None} Took 0.1331 seconds
+2023-05-16 17:51:01,796 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-29_seq_0',) {'whole': None} Took 0.1061 seconds
+2023-05-16 17:51:01,906 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-29_seq_1',) {'whole': None} Took 0.1074 seconds
+2023-05-16 17:51:02,015 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-29_seq_2',) {'whole': None} Took 0.1095 seconds
+2023-05-16 17:51:02,124 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-30_seq_0',) {'whole': None} Took 0.1164 seconds
+2023-05-16 17:51:02,234 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-06-30_seq_1',) {'whole': None} Took 0.1119 seconds
+2023-05-16 17:51:02,343 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-01_seq_1',) {'whole': None} Took 0.1115 seconds
+2023-05-16 17:51:02,453 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-02_seq_2',) {'whole': None} Took 0.1082 seconds
+2023-05-16 17:51:02,578 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-03_seq_2',) {'whole': None} Took 0.1135 seconds
+2023-05-16 17:51:02,687 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-04_seq_2',) {'whole': None} Took 0.1119 seconds
+2023-05-16 17:51:02,812 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-04_seq_4',) {'whole': None} Took 0.1342 seconds
+2023-05-16 17:51:02,921 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-05_seq_1',) {'whole': None} Took 0.1112 seconds
+2023-05-16 17:51:03,046 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-07_seq_3',) {'whole': None} Took 0.1131 seconds
+2023-05-16 17:51:03,203 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-08_seq_1',) {'whole': None} Took 0.1582 seconds
+2023-05-16 17:51:03,312 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-09_seq_0',) {'whole': None} Took 0.1153 seconds
+2023-05-16 17:51:03,453 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-09_seq_2',) {'whole': None} Took 0.1305 seconds
+2023-05-16 17:51:03,578 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-10_seq_3',) {'whole': None} Took 0.1293 seconds
+2023-05-16 17:51:03,734 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-11_seq_0',) {'whole': None} Took 0.1515 seconds
+2023-05-16 17:51:03,843 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-11_seq_1',) {'whole': None} Took 0.1174 seconds
+2023-05-16 17:51:04,046 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-11_seq_2',) {'whole': None} Took 0.2051 seconds
+2023-05-16 17:51:04,156 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-13_seq_0',) {'whole': None} Took 0.1082 seconds
+2023-05-16 17:51:04,312 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-14_seq_4',) {'whole': None} Took 0.1473 seconds
+2023-05-16 17:51:04,437 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-15_seq_1',) {'whole': None} Took 0.1302 seconds
+2023-05-16 17:51:04,578 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-16_seq_2',) {'whole': None} Took 0.1354 seconds
+2023-05-16 17:51:04,703 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-16_seq_3',) {'whole': None} Took 0.1257 seconds
+2023-05-16 17:51:04,843 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-16_seq_4',) {'whole': None} Took 0.1465 seconds
+2023-05-16 17:51:04,984 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-17_seq_6',) {'whole': None} Took 0.1295 seconds
+2023-05-16 17:51:05,109 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-18_seq_1',) {'whole': None} Took 0.1274 seconds
+2023-05-16 17:51:05,218 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-21_seq_0',) {'whole': None} Took 0.1143 seconds
+2023-05-16 17:51:05,328 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-22_seq_0',) {'whole': None} Took 0.1109 seconds
+2023-05-16 17:51:05,437 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-22_seq_2',) {'whole': None} Took 0.1039 seconds
+2023-05-16 17:51:05,546 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-23_seq_2',) {'whole': None} Took 0.1111 seconds
+2023-05-16 17:51:05,671 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-25_seq_3',) {'whole': None} Took 0.1268 seconds
+2023-05-16 17:51:05,781 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-26_seq_0',) {'whole': None} Took 0.1042 seconds
+2023-05-16 17:51:05,890 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-28_seq_0',) {'whole': None} Took 0.1122 seconds
+2023-05-16 17:51:05,999 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-30_seq_1',) {'whole': None} Took 0.1063 seconds
+2023-05-16 17:51:06,093 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-31_seq_2',) {'whole': None} Took 0.1030 seconds
+2023-05-16 17:51:06,218 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-07-31_seq_3',) {'whole': None} Took 0.1195 seconds
+2023-05-16 17:51:06,328 - INFO - Function readdataset('C:\\Users\\Perseo\\Documents\\Ciuffetti\\Dataset_Parquets\\2022-08-01_seq_0',) {'whole': None} Took 0.1152 seconds
+2023-05-16 17:51:06,749 - INFO - Function chosefiles('',) {'timeseries': None} Took 17.0663 seconds
+Trying gaussian kernel with gamma = scale
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        80         |       1022        |
+    NOT DEFECTED    |       1028        |       33191       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.97      0.97     34213
+    DEFECTED       0.07      0.07      0.07      1108
+
+    accuracy                           0.94     35321
+   macro avg       0.52      0.52      0.52     35321
+weighted avg       0.94      0.94      0.94     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 110.78
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        131        |       3401        |
+    NOT DEFECTED    |        977        |       30812       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.90      0.93     34213
+    DEFECTED       0.04      0.12      0.06      1108
+
+    accuracy                           0.88     35321
+   macro avg       0.50      0.51      0.50     35321
+weighted avg       0.94      0.88      0.91     35321
+
+The customized score threshold for 5% of outliers is 95.54
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        103        |       1663        |
+    NOT DEFECTED    |       1005        |       32550       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.95      0.96     34213
+    DEFECTED       0.06      0.09      0.07      1108
+
+    accuracy                           0.92     35321
+   macro avg       0.51      0.52      0.52     35321
+weighted avg       0.94      0.92      0.93     35321
+
+The customized score threshold for 2% of outliers is 64.31
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        58         |        649        |
+    NOT DEFECTED    |       1050        |       33564       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.98      0.98     34213
+    DEFECTED       0.08      0.05      0.06      1108
+
+    accuracy                           0.95     35321
+   macro avg       0.53      0.52      0.52     35321
+weighted avg       0.94      0.95      0.95     35321
+
+The customized score threshold for 1% of outliers is 25.69
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        37         |        317        |
+    NOT DEFECTED    |       1071        |       33896       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.99      0.98     34213
+    DEFECTED       0.10      0.03      0.05      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.54      0.51      0.52     35321
+weighted avg       0.94      0.96      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 6.64
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        21         |        156        |
+    NOT DEFECTED    |       1087        |       34057       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.12      0.02      0.03      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.54      0.51      0.51     35321
+weighted avg       0.94      0.96      0.95     35321
+
+Trying gaussian kernel with gamma = auto
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        80         |       1022        |
+    NOT DEFECTED    |       1028        |       33191       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.97      0.97     34213
+    DEFECTED       0.07      0.07      0.07      1108
+
+    accuracy                           0.94     35321
+   macro avg       0.52      0.52      0.52     35321
+weighted avg       0.94      0.94      0.94     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 110.78
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        131        |       3401        |
+    NOT DEFECTED    |        977        |       30812       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.90      0.93     34213
+    DEFECTED       0.04      0.12      0.06      1108
+
+    accuracy                           0.88     35321
+   macro avg       0.50      0.51      0.50     35321
+weighted avg       0.94      0.88      0.91     35321
+
+The customized score threshold for 5% of outliers is 95.54
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        103        |       1663        |
+    NOT DEFECTED    |       1005        |       32550       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.95      0.96     34213
+    DEFECTED       0.06      0.09      0.07      1108
+
+    accuracy                           0.92     35321
+   macro avg       0.51      0.52      0.52     35321
+weighted avg       0.94      0.92      0.93     35321
+
+The customized score threshold for 2% of outliers is 64.31
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        58         |        649        |
+    NOT DEFECTED    |       1050        |       33564       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.98      0.98     34213
+    DEFECTED       0.08      0.05      0.06      1108
+
+    accuracy                           0.95     35321
+   macro avg       0.53      0.52      0.52     35321
+weighted avg       0.94      0.95      0.95     35321
+
+The customized score threshold for 1% of outliers is 25.69
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        37         |        317        |
+    NOT DEFECTED    |       1071        |       33896       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.99      0.98     34213
+    DEFECTED       0.10      0.03      0.05      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.54      0.51      0.52     35321
+weighted avg       0.94      0.96      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 6.64
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        21         |        156        |
+    NOT DEFECTED    |       1087        |       34057       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.12      0.02      0.03      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.54      0.51      0.51     35321
+weighted avg       0.94      0.96      0.95     35321
+
+Trying gaussian kernel with gamma = 10
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |       1108        |       34213       |
+    NOT DEFECTED    |         0         |         0         |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.00      0.00      0.00     34213
+    DEFECTED       0.03      1.00      0.06      1108
+
+    accuracy                           0.03     35321
+   macro avg       0.02      0.50      0.03     35321
+weighted avg       0.00      0.03      0.00     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+The customized score threshold for 2% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+Trying gaussian kernel with gamma = 1
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        937        |       28747       |
+    NOT DEFECTED    |        171        |       5466        |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.16      0.27     34213
+    DEFECTED       0.03      0.85      0.06      1108
+
+    accuracy                           0.18     35321
+   macro avg       0.50      0.50      0.17     35321
+weighted avg       0.94      0.18      0.27     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        182        |       3350        |
+    NOT DEFECTED    |        926        |       30863       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.90      0.94     34213
+    DEFECTED       0.05      0.16      0.08      1108
+
+    accuracy                           0.88     35321
+   macro avg       0.51      0.53      0.51     35321
+weighted avg       0.94      0.88      0.91     35321
+
+The customized score threshold for 5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        117        |       1649        |
+    NOT DEFECTED    |        991        |       32564       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.95      0.96     34213
+    DEFECTED       0.07      0.11      0.08      1108
+
+    accuracy                           0.93     35321
+   macro avg       0.52      0.53      0.52     35321
+weighted avg       0.94      0.93      0.93     35321
+
+The customized score threshold for 2% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+Trying gaussian kernel with gamma = 0.5
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        749        |       21590       |
+    NOT DEFECTED    |        359        |       12623       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.37      0.53     34213
+    DEFECTED       0.03      0.68      0.06      1108
+
+    accuracy                           0.38     35321
+   macro avg       0.50      0.52      0.30     35321
+weighted avg       0.94      0.38      0.52     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        186        |       3346        |
+    NOT DEFECTED    |        922        |       30867       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.90      0.94     34213
+    DEFECTED       0.05      0.17      0.08      1108
+
+    accuracy                           0.88     35321
+   macro avg       0.51      0.54      0.51     35321
+weighted avg       0.94      0.88      0.91     35321
+
+The customized score threshold for 5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        117        |       1649        |
+    NOT DEFECTED    |        991        |       32564       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.95      0.96     34213
+    DEFECTED       0.07      0.11      0.08      1108
+
+    accuracy                           0.93     35321
+   macro avg       0.52      0.53      0.52     35321
+weighted avg       0.94      0.93      0.93     35321
+
+The customized score threshold for 2% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        69         |        638        |
+    NOT DEFECTED    |       1039        |       33575       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.98      0.98     34213
+    DEFECTED       0.10      0.06      0.08      1108
+
+    accuracy                           0.95     35321
+   macro avg       0.53      0.52      0.53     35321
+weighted avg       0.94      0.95      0.95     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |       1108        |       34213       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.00      0.00      0.00      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.48      0.50      0.49     35321
+weighted avg       0.94      0.97      0.95     35321
+
+Trying gaussian kernel with gamma = 0.1
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        308        |       6317        |
+    NOT DEFECTED    |        800        |       27896       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.82      0.89     34213
+    DEFECTED       0.05      0.28      0.08      1108
+
+    accuracy                           0.80     35321
+   macro avg       0.51      0.55      0.48     35321
+weighted avg       0.94      0.80      0.86     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.29
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        187        |       3345        |
+    NOT DEFECTED    |        921        |       30868       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.90      0.94     34213
+    DEFECTED       0.05      0.17      0.08      1108
+
+    accuracy                           0.88     35321
+   macro avg       0.51      0.54      0.51     35321
+weighted avg       0.94      0.88      0.91     35321
+
+The customized score threshold for 5% of outliers is 0.15
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        121        |       1645        |
+    NOT DEFECTED    |        987        |       32568       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.95      0.96     34213
+    DEFECTED       0.07      0.11      0.08      1108
+
+    accuracy                           0.93     35321
+   macro avg       0.52      0.53      0.52     35321
+weighted avg       0.94      0.93      0.93     35321
+
+The customized score threshold for 2% of outliers is 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        68         |        639        |
+    NOT DEFECTED    |       1040        |       33574       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.98      0.98     34213
+    DEFECTED       0.10      0.06      0.07      1108
+
+    accuracy                           0.95     35321
+   macro avg       0.53      0.52      0.53     35321
+weighted avg       0.94      0.95      0.95     35321
+
+The customized score threshold for 1% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        43         |        311        |
+    NOT DEFECTED    |       1065        |       33902       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.99      0.98     34213
+    DEFECTED       0.12      0.04      0.06      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.55      0.51      0.52     35321
+weighted avg       0.94      0.96      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        25         |        152        |
+    NOT DEFECTED    |       1083        |       34061       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.14      0.02      0.04      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.56      0.51      0.51     35321
+weighted avg       0.94      0.97      0.95     35321
+
+Trying gaussian kernel with gamma = 0.05
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        173        |       3098        |
+    NOT DEFECTED    |        935        |       31115       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.91      0.94     34213
+    DEFECTED       0.05      0.16      0.08      1108
+
+    accuracy                           0.89     35321
+   macro avg       0.51      0.53      0.51     35321
+weighted avg       0.94      0.89      0.91     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.76
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        180        |       3352        |
+    NOT DEFECTED    |        928        |       30861       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.90      0.94     34213
+    DEFECTED       0.05      0.16      0.08      1108
+
+    accuracy                           0.88     35321
+   macro avg       0.51      0.53      0.51     35321
+weighted avg       0.94      0.88      0.91     35321
+
+The customized score threshold for 5% of outliers is 0.60
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        117        |       1649        |
+    NOT DEFECTED    |        991        |       32564       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.95      0.96     34213
+    DEFECTED       0.07      0.11      0.08      1108
+
+    accuracy                           0.93     35321
+   macro avg       0.52      0.53      0.52     35321
+weighted avg       0.94      0.93      0.93     35321
+
+The customized score threshold for 2% of outliers is 0.15
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        64         |        643        |
+    NOT DEFECTED    |       1044        |       33570       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.98      0.98     34213
+    DEFECTED       0.09      0.06      0.07      1108
+
+    accuracy                           0.95     35321
+   macro avg       0.53      0.52      0.52     35321
+weighted avg       0.94      0.95      0.95     35321
+
+The customized score threshold for 1% of outliers is 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        44         |        310        |
+    NOT DEFECTED    |       1064        |       33903       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.99      0.98     34213
+    DEFECTED       0.12      0.04      0.06      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.55      0.52      0.52     35321
+weighted avg       0.94      0.96      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        25         |        152        |
+    NOT DEFECTED    |       1083        |       34061       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.14      0.02      0.04      1108
+
+    accuracy                           0.97     35321
+   macro avg       0.56      0.51      0.51     35321
+weighted avg       0.94      0.97      0.95     35321
+
+Trying gaussian kernel with gamma = 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        75         |       1038        |
+    NOT DEFECTED    |       1033        |       33175       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.97      0.97     34213
+    DEFECTED       0.07      0.07      0.07      1108
+
+    accuracy                           0.94     35321
+   macro avg       0.52      0.52      0.52     35321
+weighted avg       0.94      0.94      0.94     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 34.15
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        141        |       3391        |
+    NOT DEFECTED    |        967        |       30822       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.90      0.93     34213
+    DEFECTED       0.04      0.13      0.06      1108
+
+    accuracy                           0.88     35321
+   macro avg       0.50      0.51      0.50     35321
+weighted avg       0.94      0.88      0.91     35321
+
+The customized score threshold for 5% of outliers is 29.50
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        106        |       1660        |
+    NOT DEFECTED    |       1002        |       32553       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.95      0.96     34213
+    DEFECTED       0.06      0.10      0.07      1108
+
+    accuracy                           0.92     35321
+   macro avg       0.52      0.52      0.52     35321
+weighted avg       0.94      0.92      0.93     35321
+
+The customized score threshold for 2% of outliers is 19.92
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        60         |        647        |
+    NOT DEFECTED    |       1048        |       33566       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.98      0.98     34213
+    DEFECTED       0.08      0.05      0.07      1108
+
+    accuracy                           0.95     35321
+   macro avg       0.53      0.52      0.52     35321
+weighted avg       0.94      0.95      0.95     35321
+
+The customized score threshold for 1% of outliers is 7.11
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        38         |        316        |
+    NOT DEFECTED    |       1070        |       33897       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      0.99      0.98     34213
+    DEFECTED       0.11      0.03      0.05      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.54      0.51      0.52     35321
+weighted avg       0.94      0.96      0.95     35321
+
+The customized score threshold for 0.5% of outliers is 1.55
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        21         |        156        |
+    NOT DEFECTED    |       1087        |       34057       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.97      1.00      0.98     34213
+    DEFECTED       0.12      0.02      0.03      1108
+
+    accuracy                           0.96     35321
+   macro avg       0.54      0.51      0.51     35321
+weighted avg       0.94      0.96      0.95     35321
+
+Trying gaussian kernel with gamma = scale
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        369        |
+    NOT DEFECTED    |        41         |       34907       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35276
+    DEFECTED       0.01      0.09      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.54      0.51     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.36
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         6         |       3526        |
+    NOT DEFECTED    |        39         |       31750       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35276
+    DEFECTED       0.00      0.13      0.00        45
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.52      0.48     35321
+weighted avg       1.00      0.90      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.31
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         5         |       1761        |
+    NOT DEFECTED    |        40         |       33515       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35276
+    DEFECTED       0.00      0.11      0.01        45
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.53      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.25
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        703        |
+    NOT DEFECTED    |        41         |       34573       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35276
+    DEFECTED       0.01      0.09      0.01        45
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.53      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.22
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        350        |
+    NOT DEFECTED    |        41         |       34926       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35276
+    DEFECTED       0.01      0.09      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.51      0.54      0.51     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.15
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |        175        |
+    NOT DEFECTED    |        43         |       35101       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.01      0.04      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.51      0.52      0.51     35321
+weighted avg       1.00      0.99      1.00     35321
+
+Trying gaussian kernel with gamma = auto
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        369        |
+    NOT DEFECTED    |        41         |       34907       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35276
+    DEFECTED       0.01      0.09      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.54      0.51     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.36
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         6         |       3526        |
+    NOT DEFECTED    |        39         |       31750       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35276
+    DEFECTED       0.00      0.13      0.00        45
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.52      0.48     35321
+weighted avg       1.00      0.90      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.31
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         5         |       1761        |
+    NOT DEFECTED    |        40         |       33515       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35276
+    DEFECTED       0.00      0.11      0.01        45
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.53      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.25
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        703        |
+    NOT DEFECTED    |        41         |       34573       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35276
+    DEFECTED       0.01      0.09      0.01        45
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.53      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.22
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        350        |
+    NOT DEFECTED    |        41         |       34926       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35276
+    DEFECTED       0.01      0.09      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.51      0.54      0.51     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.15
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |        175        |
+    NOT DEFECTED    |        43         |       35101       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.01      0.04      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.51      0.52      0.51     35321
+weighted avg       1.00      0.99      1.00     35321
+
+Trying gaussian kernel with gamma = 10
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        45         |       35276       |
+    NOT DEFECTED    |         0         |         0         |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.00      0.00      0.00     35276
+    DEFECTED       0.00      1.00      0.00        45
+
+    accuracy                           0.00     35321
+   macro avg       0.00      0.50      0.00     35321
+weighted avg       0.00      0.00      0.00     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 2% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+Trying gaussian kernel with gamma = 1
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        42         |       31330       |
+    NOT DEFECTED    |         3         |       3946        |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.11      0.20     35276
+    DEFECTED       0.00      0.93      0.00        45
+
+    accuracy                           0.11     35321
+   macro avg       0.50      0.52      0.10     35321
+weighted avg       1.00      0.11      0.20     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        11         |       3521        |
+    NOT DEFECTED    |        34         |       31755       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35276
+    DEFECTED       0.00      0.24      0.01        45
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.57      0.48     35321
+weighted avg       1.00      0.90      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         7         |       1759        |
+    NOT DEFECTED    |        38         |       33517       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35276
+    DEFECTED       0.00      0.16      0.01        45
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.55      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+Trying gaussian kernel with gamma = 0.5
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        35         |       23243       |
+    NOT DEFECTED    |        10         |       12033       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.34      0.51     35276
+    DEFECTED       0.00      0.78      0.00        45
+
+    accuracy                           0.34     35321
+   macro avg       0.50      0.56      0.26     35321
+weighted avg       1.00      0.34      0.51     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        10         |       3522        |
+    NOT DEFECTED    |        35         |       31754       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35276
+    DEFECTED       0.00      0.22      0.01        45
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.56      0.48     35321
+weighted avg       1.00      0.90      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         8         |       1758        |
+    NOT DEFECTED    |        37         |       33518       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35276
+    DEFECTED       0.00      0.18      0.01        45
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.56      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         5         |        702        |
+    NOT DEFECTED    |        40         |       34574       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35276
+    DEFECTED       0.01      0.11      0.01        45
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.55      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        45         |       35276       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.00      0.00      0.00        45
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+Trying gaussian kernel with gamma = 0.1
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        13         |       6682        |
+    NOT DEFECTED    |        32         |       28594       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.81      0.89     35276
+    DEFECTED       0.00      0.29      0.00        45
+
+    accuracy                           0.81     35321
+   macro avg       0.50      0.55      0.45     35321
+weighted avg       1.00      0.81      0.89     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        10         |       3522        |
+    NOT DEFECTED    |        35         |       31754       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35276
+    DEFECTED       0.00      0.22      0.01        45
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.56      0.48     35321
+weighted avg       1.00      0.90      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         8         |       1758        |
+    NOT DEFECTED    |        37         |       33518       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35276
+    DEFECTED       0.00      0.18      0.01        45
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.56      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         5         |        702        |
+    NOT DEFECTED    |        40         |       34574       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35276
+    DEFECTED       0.01      0.11      0.01        45
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.55      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         3         |        351        |
+    NOT DEFECTED    |        42         |       34925       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35276
+    DEFECTED       0.01      0.07      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.53      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |        175        |
+    NOT DEFECTED    |        43         |       35101       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.01      0.04      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.51      0.52      0.51     35321
+weighted avg       1.00      0.99      1.00     35321
+
+Trying gaussian kernel with gamma = 0.05
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         8         |       3289        |
+    NOT DEFECTED    |        37         |       31987       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.91      0.95     35276
+    DEFECTED       0.00      0.18      0.00        45
+
+    accuracy                           0.91     35321
+   macro avg       0.50      0.54      0.48     35321
+weighted avg       1.00      0.91      0.95     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.03
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         8         |       3524        |
+    NOT DEFECTED    |        37         |       31752       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35276
+    DEFECTED       0.00      0.18      0.00        45
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.54      0.48     35321
+weighted avg       1.00      0.90      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.02
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         8         |       1758        |
+    NOT DEFECTED    |        37         |       33518       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35276
+    DEFECTED       0.00      0.18      0.01        45
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.56      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         6         |        701        |
+    NOT DEFECTED    |        39         |       34575       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35276
+    DEFECTED       0.01      0.13      0.02        45
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.56      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         3         |        351        |
+    NOT DEFECTED    |        42         |       34925       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35276
+    DEFECTED       0.01      0.07      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.53      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |        175        |
+    NOT DEFECTED    |        43         |       35101       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.01      0.04      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.51      0.52      0.51     35321
+weighted avg       1.00      0.99      1.00     35321
+
+Trying gaussian kernel with gamma = 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        573        |
+    NOT DEFECTED    |        41         |       34703       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35276
+    DEFECTED       0.01      0.09      0.01        45
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.54      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.21
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         7         |       3525        |
+    NOT DEFECTED    |        38         |       31751       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35276
+    DEFECTED       0.00      0.16      0.00        45
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.53      0.48     35321
+weighted avg       1.00      0.90      0.95     35321
+
+The customized score threshold for 5% of outliers is 0.18
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |       1762        |
+    NOT DEFECTED    |        41         |       33514       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35276
+    DEFECTED       0.00      0.09      0.00        45
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.52      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.15
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         4         |        703        |
+    NOT DEFECTED    |        41         |       34573       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35276
+    DEFECTED       0.01      0.09      0.01        45
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.53      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.12
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         3         |        351        |
+    NOT DEFECTED    |        42         |       34925       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35276
+    DEFECTED       0.01      0.07      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.53      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.05
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |        175        |
+    NOT DEFECTED    |        43         |       35101       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35276
+    DEFECTED       0.01      0.04      0.02        45
+
+    accuracy                           0.99     35321
+   macro avg       0.51      0.52      0.51     35321
+weighted avg       1.00      0.99      1.00     35321
+
+Trying gaussian kernel with gamma = scale
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        372        |
+    NOT DEFECTED    |        61         |       34888       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.47
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |       3532        |
+    NOT DEFECTED    |        61         |       31728       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.45      0.47     35321
+weighted avg       1.00      0.90      0.94     35321
+
+The customized score threshold for 5% of outliers is 0.40
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |       1766        |
+    NOT DEFECTED    |        61         |       33494       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.47      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.32
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        707        |
+    NOT DEFECTED    |        61         |       34553       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.49      0.49     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.29
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        354        |
+    NOT DEFECTED    |        61         |       34906       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.19
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        177        |
+    NOT DEFECTED    |        61         |       35083       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Trying gaussian kernel with gamma = auto
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        373        |
+    NOT DEFECTED    |        61         |       34887       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.47
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |       3532        |
+    NOT DEFECTED    |        61         |       31728       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.45      0.47     35321
+weighted avg       1.00      0.90      0.94     35321
+
+The customized score threshold for 5% of outliers is 0.40
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |       1766        |
+    NOT DEFECTED    |        61         |       33494       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.47      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.32
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        707        |
+    NOT DEFECTED    |        61         |       34553       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.49      0.49     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.29
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        354        |
+    NOT DEFECTED    |        61         |       34906       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.19
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        177        |
+    NOT DEFECTED    |        61         |       35083       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Trying gaussian kernel with gamma = 10
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        61         |       35260       |
+    NOT DEFECTED    |         0         |         0         |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       0.00      0.00      0.00     35260
+    DEFECTED       0.00      1.00      0.00        61
+
+    accuracy                           0.00     35321
+   macro avg       0.00      0.50      0.00     35321
+weighted avg       0.00      0.00      0.00     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 2% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+Trying gaussian kernel with gamma = 1
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        46         |       29572       |
+    NOT DEFECTED    |        15         |       5688        |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.16      0.28     35260
+    DEFECTED       0.00      0.75      0.00        61
+
+    accuracy                           0.16     35321
+   macro avg       0.50      0.46      0.14     35321
+weighted avg       1.00      0.16      0.28     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |       3530        |
+    NOT DEFECTED    |        59         |       31730       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35260
+    DEFECTED       0.00      0.03      0.00        61
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.47      0.47     35321
+weighted avg       1.00      0.90      0.94     35321
+
+The customized score threshold for 5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         1         |       1765        |
+    NOT DEFECTED    |        60         |       33495       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35260
+    DEFECTED       0.00      0.02      0.00        61
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.48      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+Trying gaussian kernel with gamma = 0.5
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |        33         |       22983       |
+    NOT DEFECTED    |        28         |       12277       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.35      0.52     35260
+    DEFECTED       0.00      0.54      0.00        61
+
+    accuracy                           0.35     35321
+   macro avg       0.50      0.44      0.26     35321
+weighted avg       1.00      0.35      0.52     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |       3530        |
+    NOT DEFECTED    |        59         |       31730       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35260
+    DEFECTED       0.00      0.03      0.00        61
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.47      0.47     35321
+weighted avg       1.00      0.90      0.94     35321
+
+The customized score threshold for 5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         1         |       1765        |
+    NOT DEFECTED    |        60         |       33495       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35260
+    DEFECTED       0.00      0.02      0.00        61
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.48      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        707        |
+    NOT DEFECTED    |        61         |       34553       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.49      0.49     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Perseo\Documents\Anas_OK-ROAD\env1\lib\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |         0         |
+    NOT DEFECTED    |        61         |       35260       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      1.00      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           1.00     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      1.00      1.00     35321
+
+Trying gaussian kernel with gamma = 0.1
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         8         |       6654        |
+    NOT DEFECTED    |        53         |       28606       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.81      0.90     35260
+    DEFECTED       0.00      0.13      0.00        61
+
+    accuracy                           0.81     35321
+   macro avg       0.50      0.47      0.45     35321
+weighted avg       1.00      0.81      0.89     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.02
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |       3530        |
+    NOT DEFECTED    |        59         |       31730       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35260
+    DEFECTED       0.00      0.03      0.00        61
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.47      0.47     35321
+weighted avg       1.00      0.90      0.94     35321
+
+The customized score threshold for 5% of outliers is 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         1         |       1765        |
+    NOT DEFECTED    |        60         |       33495       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35260
+    DEFECTED       0.00      0.02      0.00        61
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.48      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        707        |
+    NOT DEFECTED    |        61         |       34553       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.49      0.49     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        354        |
+    NOT DEFECTED    |        61         |       34906       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        177        |
+    NOT DEFECTED    |        61         |       35083       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Trying gaussian kernel with gamma = 0.05
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         1         |       3269        |
+    NOT DEFECTED    |        60         |       31991       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.91      0.95     35260
+    DEFECTED       0.00      0.02      0.00        61
+
+    accuracy                           0.91     35321
+   macro avg       0.50      0.46      0.48     35321
+weighted avg       1.00      0.91      0.95     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.04
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         2         |       3530        |
+    NOT DEFECTED    |        59         |       31730       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35260
+    DEFECTED       0.00      0.03      0.00        61
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.47      0.47     35321
+weighted avg       1.00      0.90      0.94     35321
+
+The customized score threshold for 5% of outliers is 0.03
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         1         |       1765        |
+    NOT DEFECTED    |        60         |       33495       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35260
+    DEFECTED       0.00      0.02      0.00        61
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.48      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         1         |        706        |
+    NOT DEFECTED    |        60         |       34554       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35260
+    DEFECTED       0.00      0.02      0.00        61
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        354        |
+    NOT DEFECTED    |        61         |       34906       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.00
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        177        |
+    NOT DEFECTED    |        61         |       35083       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+Trying gaussian kernel with gamma = 0.01
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        575        |
+    NOT DEFECTED    |        61         |       34685       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.98      0.99     35321
+
+Customizing the threshold:
+The customized score threshold for 10% of outliers is 0.27
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         1         |       3531        |
+    NOT DEFECTED    |        60         |       31729       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.90      0.95     35260
+    DEFECTED       0.00      0.02      0.00        61
+
+    accuracy                           0.90     35321
+   macro avg       0.50      0.46      0.47     35321
+weighted avg       1.00      0.90      0.94     35321
+
+The customized score threshold for 5% of outliers is 0.24
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |       1766        |
+    NOT DEFECTED    |        61         |       33494       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.95      0.97     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.95     35321
+   macro avg       0.50      0.47      0.49     35321
+weighted avg       1.00      0.95      0.97     35321
+
+The customized score threshold for 2% of outliers is 0.20
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        707        |
+    NOT DEFECTED    |        61         |       34553       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.98      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.98     35321
+   macro avg       0.50      0.49      0.49     35321
+weighted avg       1.00      0.98      0.99     35321
+
+The customized score threshold for 1% of outliers is 0.16
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        354        |
+    NOT DEFECTED    |        61         |       34906       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      0.99     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.49      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+The customized score threshold for 0.5% of outliers is 0.07
+Here is the confusion matrix:
+----------------------CONFUSION MATRIX----------------------|
+-----PREDICTED------|-----------------ACTUAL----------------|
+                    |------DEFECTED-----|----NOT DEFECTED---|
+      DEFECTED      |         0         |        177        |
+    NOT DEFECTED    |        61         |       35083       |
+------------------------------------------------------------|
+
+Here is the classification report:
+              precision    recall  f1-score   support
+
+NOT DEFECTED       1.00      0.99      1.00     35260
+    DEFECTED       0.00      0.00      0.00        61
+
+    accuracy                           0.99     35321
+   macro avg       0.50      0.50      0.50     35321
+weighted avg       1.00      0.99      0.99     35321
+
+
+Process finished with exit code 0
