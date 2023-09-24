@@ -552,7 +552,7 @@ def gridsearch_cv_out(x_te, y_te, trained_grid: GridSearchCV, parameters, defect
 
 # For deep learning
 class CustomDataset(torch.utils.data.Dataset):
-    def __init__(self, data: pd.DataFrame, labels: pd.DataFrame or None = None, transform=transforms.ToTensor()):
+    def __init__(self, data: pd.DataFrame, labels: pd.DataFrame or None = None):
         self.data = data
 
         if isinstance(labels, pd.DataFrame):
