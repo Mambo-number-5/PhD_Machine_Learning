@@ -16,6 +16,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # use(back_end_matplotlib)
 checkpoints_folder = join(".", "Autoencoder_checkpoints")
 
+
 def get_custom_dataset_one_class_per_defect(from_date: str = "", time_series: bool = None,
                                             build_interactive_filter: bool = False, filter_defects: dict or None = None,
                                             merge_chem_on_iba: bool = False, clean: bool = True,
@@ -346,9 +347,9 @@ def gaussian_autoencoder(model: str or AE,  custom_train_dataset: CustomDataset,
         total = torch.cat(result_train)
         n = len(total)
         mean_ml = total.mean()
-        var_ml = n / (n - 1) * total.var(dim=0)
+        var_ml = n / (n - 1) * total.var(dim=0)  # Give the unbiased (due to Maximum Likelihood) value of the variance
         std_ml = torch.sqrt(var_ml)
-        del total, result_train, losses, n, reconstructed, batch, train_loader
+        del total, result_train, losses, n, reconstructed, batch, train_loader, var_ml
 
         result_test = list()
         for batch, labels in test_loader:
@@ -426,14 +427,36 @@ def train_test_one_class_autoencoder(to_test: str, batch_size: int = 7_500, trai
                                  btc_size=batch_size, figure_name=figure_name)
 
 
-def plot_normal_curve(mean, std_dev, not_defected: pd.Series, defected: pd.Series, model: AE, defect_str: str,
-                      filename: str = ""):
+def score_autoencoder(gaussian_mean: torch.float32, gaussian_std: torch.float32, class_0: pd.Series,
+                      class_1: pd.Series) -> pd.DataFrame:
+
+    sigmas_for_threshold = (1, 2, 3)
+    column_titles = ("True Positive", "False Positive", "False Negative", "True Negative", "F1-score")
+    result_dataframe = pd.DataFrame(columns=column_titles)
+    del column_titles
+    for i in sigmas_for_threshold:
+        index_for_threshold = str(i) + "σ"
+        threshold = gaussian_mean + i * gaussian_std
+        threshold = threshold.numpy()
+        tp = sum(class_1 > threshold)
+        fn = sum(class_1 < threshold)
+        tn = sum(class_0 < threshold)
+        fp = sum(class_0 > threshold)
+        f1 = 2 * tp / (2 * tp + fn + fp)
+        values = [int(i) for i in (tp, fp, fn, tn)] + [f1]
+        result_dataframe.loc[index_for_threshold] = values
+    result_dataframe.index.name = "Threshold"
+    return result_dataframe
+
+
+def plot_normal_curve(mean: torch.float32, std_dev: torch.float32, not_defected: pd.Series, defected: pd.Series,
+                      model: AE, defect_str: str, filename: str = ""):
 
     title = model.name + " for defect " + defect_str
     legend_0 = f"NOT {defect_str}"
     legend_1 = defect_str
 
-    x = np.linspace(mean - std_dev, mean + 3 * std_dev, 1000)
+    x = np.linspace(mean - std_dev, max(not_defected.max(), defected.max(), mean + 3 * std_dev), 100_000)
     y = stats.norm.pdf(x, mean, std_dev)
     max_y = np.max(y)
 
@@ -456,15 +479,14 @@ def plot_normal_curve(mean, std_dev, not_defected: pd.Series, defected: pd.Serie
     # Impost del grafico
     fig.update_layout(title=title, xaxis_title='Losses', yaxis_title='Y', showlegend=True)
 
-    # Imp manual i limit di y
-    fig.update_yaxes(range=[0, max_y * 1.1])
-
-    # Imp manual i limits di x in base a defected e not_defected
-    fig.update_xaxes(range=[min(not_defected.min(), defected.min()) - 1, max(not_defected.max(), defected.max()) + 1])
-
     # Show the interactive figure or save it as HTML
     if filename != "":
         fig.write_html(filename + '.html')
+        df_score = score_autoencoder(mean, std_dev, class_0=not_defected, class_1=defected)
+        gfg = df_score.to_markdown(index=True, tablefmt="grid")
+        with open(filename + ".txt", "w", encoding="utf-8") as f:
+            f.write(f'Gaussian curve (Mean: {mean}, Standard deviation: {std_dev})\n')
+            print(gfg, file=f)
     else:
         fig.show()
 

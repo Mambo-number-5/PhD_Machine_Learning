@@ -594,4 +594,5 @@ def generate_custom_datasets(from_date: str = "", time_series: bool = False, bui
 
 
 if __name__ == '__main__':
+    test_read_dataset = readdataset(join(fold, listsubdir[0]), whole=False)
     print('In main...')
