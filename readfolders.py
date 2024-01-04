@@ -17,7 +17,6 @@ from imblearn.under_sampling import ClusterCentroids, EditedNearestNeighbours
 from imblearn.combine import SMOTEENN
 # from sklearn.cluster import KMeans
 import torch
-from torchvision import transforms
 
 fold = join('..', 'Dataset_Parquets')
 
@@ -92,7 +91,7 @@ def log_file_dec(log_path: str, print_stderr: bool = False):
             f = open(log_path, 'a')
             t = time.localtime()
             now = time.strftime("%d/%m/%y----%H:%M:%S", t)
-            f.write(f'Local (clock of the computer) time: {now}')
+            f.write(f'Local (clock of the computer) time: {now} --> ')
             del now, t
             f.write(f'Redirecting output of funcion {func.__name__}:\n')
             orig_stdout = sys.stdout
@@ -489,7 +488,7 @@ def generate_clean_dataset(from_date: str = "", timeseries: bool or None = None,
                 x.drop(nanx, inplace=True)
                 labl.drop(nanx, inplace=True)
         else:
-            nanx = x[pd.isnull(x).any(1)].index
+            nanx = x[x.isna().any(axis=1)].index
             x.drop(nanx, inplace=True)
             labl.drop(nanx, inplace=True)
     return x, labl
@@ -553,11 +552,9 @@ def gridsearch_cv_out(x_te, y_te, trained_grid: GridSearchCV, parameters, defect
 # For deep learning
 class CustomDataset(torch.utils.data.Dataset):
     def __init__(self, data: pd.DataFrame, labels: pd.DataFrame or None = None):
-        self.data = data
+        self.data = pd.DataFrame(data)
 
-        if isinstance(labels, pd.DataFrame):
-            self.y = labels.sort_index(axis=1)
-        elif labels is not None:
+        if labels is not None:
             self.y = pd.DataFrame(labels)
         else:
             self.y = None

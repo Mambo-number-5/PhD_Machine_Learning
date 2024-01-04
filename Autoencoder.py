@@ -1,4 +1,4 @@
-from readfolders import KeyErrorMessage, CustomDataset, generate_clean_dataset
+from readfolders import KeyErrorMessage, CustomDataset, generate_clean_dataset, log_file_dec
 from sklearn.model_selection import train_test_split
 from os.path import join, isfile
 from os import makedirs
@@ -8,8 +8,10 @@ from torch import nn
 from pprint import pprint
 from scipy import stats
 import numpy as np
+from sklearn.decomposition import PCA
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+
 #  use gpu if available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # back_end_matplotlib = 'Qt5Agg'
@@ -20,7 +22,10 @@ checkpoints_folder = join(".", "Autoencoder_checkpoints")
 def get_custom_dataset_one_class_per_defect(from_date: str = "", time_series: bool = None,
                                             build_interactive_filter: bool = False, filter_defects: dict or None = None,
                                             merge_chem_on_iba: bool = False, clean: bool = True,
-                                            normalize: bool = True) -> (CustomDataset, CustomDataset, str):
+                                            normalize: bool = True,
+                                            pcas: [int] or None = None)\
+                                                -> (CustomDataset, CustomDataset, str, (str, str) or None):
+    pca_tuple = None
     x, y = generate_clean_dataset(from_date=from_date, timeseries=time_series,
                                   build_interactive_filt=build_interactive_filter, filter_defs=filter_defects,
                                   merge_chem_on_iba=merge_chem_on_iba, clean=clean)
@@ -36,10 +41,22 @@ def get_custom_dataset_one_class_per_defect(from_date: str = "", time_series: bo
         x_prov = x_train.drop(to_remove)
         x_tes_plus = pd.concat([x_test, x_train.loc[to_remove]])
         y_tes_plus = pd.concat([y_test, y_train.loc[to_remove]])
-        dat_prov = CustomDataset(data=x_prov)
-        dat_test = CustomDataset(data=x_tes_plus, labels=y_tes_plus)
-        del to_remove, x_train, y_train, x_test, y_test, x_tes_plus, y_tes_plus, x_prov
-        yield dat_prov, dat_test, i
+        del to_remove, x_train, y_train, x_test, y_test
+        if pcas is None:
+            dat_prov = CustomDataset(data=x_prov)
+            dat_test = CustomDataset(data=x_tes_plus, labels=y_tes_plus)
+            del x_tes_plus, y_tes_plus, x_prov
+            yield dat_prov, dat_test, i, pca_tuple
+        elif isinstance(pcas, list) and len(pcas):
+            for p in pcas:
+                pca_str = "PCA_{}".format(p)
+                pca_prov, pca_tes_plus, pca_msg, var_explained = pca_dataset(p, x_prov, x_tes_plus)
+                pca_tuple = (pca_str, pca_msg)
+                dat_prov = CustomDataset(data=pca_prov)
+                dat_test = CustomDataset(data=pca_tes_plus, labels=y_tes_plus)
+                yield dat_prov, dat_test, i, pca_tuple
+        else:
+            raise KeyError(KeyErrorMessage(error_messages("pcas", "not_list")))
 
 
 def error_messages(name: str, more_specific: str = "", *args) -> str:
@@ -98,6 +115,11 @@ def error_messages(name: str, more_specific: str = "", *args) -> str:
         msg += "{} should be an int that represent the number of neurons for that layer, '{}' found ".format(*args)
         msg += "instead.\n"
         return msg
+    elif name == "pcas":
+        if more_specific == "not_list":
+            msg = "During the creation of the dataset, the parameter pcas was wrongly initialized, it should be a list "
+            msg += "of integers"
+            return msg
 
     raise KeyError("Error during the use of the key for the choice of the error message")
 
@@ -214,7 +236,9 @@ class AE(nn.Module):
         return out
 
 
-def train_defect(model_dict: dict, data: CustomDataset, batch_size: int, epochs: int = 5, save: str = "") -> AE:
+
+def train_defect(model_dict: dict, data: CustomDataset, batch_size: int, epochs: int = 5, save: str = "",
+                 pca_: tuple[str, str] or None = None) -> AE:
     train_loader = torch.utils.data.DataLoader(dataset=data, batch_size=batch_size, shuffle=True, num_workers=8)
     if isinstance(model_dict, dict):
         model_dict['input_shape'] = data.data.shape[1]
@@ -227,6 +251,8 @@ def train_defect(model_dict: dict, data: CustomDataset, batch_size: int, epochs:
     loss = None
     total_step = len(train_loader)
     # The train for loop
+    if pca_ is not None:
+        print(pca_[1])
     for epoch in range(epochs):
         for i, batch in enumerate(train_loader):
             batch = batch.float().to(device)
@@ -245,36 +271,13 @@ def train_defect(model_dict: dict, data: CustomDataset, batch_size: int, epochs:
         print("Epoch [{}/{}], Loss: {:.4f}".format(epoch + 1, epochs, loss.item()))
 
     if save != "":
-        save_str = join(checkpoints_folder, model.name + save + ".ckpt")
+        if pca_ is None:
+            save_str = join(checkpoints_folder, model.name + save + ".ckpt")
+        else:
+            makedirs(join(checkpoints_folder, pca_[0]), exist_ok=True)
+            save_str = join(checkpoints_folder, pca_[0], model.name + save + ".ckpt")
         torch.save(model.state_dict(), save_str)
     return model
-
-
-def train_every_defect(model_dict: dict, from_date: str = "", time_series: bool = None,
-                       build_interactive_filter: bool = False, filter_defects: dict or None = None,
-                       merge_chem_on_iba: bool = False, clean: bool = True, normalize: bool = True,
-                       batch_size: int = 7_500, epoch_dict: dict or None = None, save_model: bool = True) -> dict:
-    result = dict()
-    if epoch_dict is None:
-        epoch_dict = {}
-    generator_dfs = get_custom_dataset_one_class_per_defect(from_date=from_date, time_series=time_series,
-                                                            build_interactive_filter=build_interactive_filter,
-                                                            filter_defects=filter_defects,
-                                                            merge_chem_on_iba=merge_chem_on_iba, clean=clean,
-                                                            normalize=normalize)
-    print('Autoencoder:')
-    pprint(model_dict)
-    print("going to be trained for each defect...")
-    for custom_tr, custom_te, defect_str in generator_dfs:
-        print(f"Defect {defect_str} in training:")
-        eps = epoch_dict.get(defect_str, 10)
-        if save_model:
-            model = train_defect(model_dict, custom_tr, batch_size, epochs=eps, save=defect_str)
-        else:
-            model = train_defect(model_dict, custom_tr, batch_size, epochs=eps)
-        result[defect_str] = model
-        print('\n')
-    return result
 
 
 def get_dict_from_name(name: str) -> dict:
@@ -319,14 +322,19 @@ def get_dict_from_name(name: str) -> dict:
         raise ValueError(err_str)
 
 
-def gaussian_autoencoder(model: str or AE,  custom_train_dataset: CustomDataset, custom_test_dataset: CustomDataset,
-                         model_for_defect: str = "", btc_size: int = 7_500, figure_name: str = ""):
+def gaussian_autoencoder(model: str or AE, custom_train_dataset: CustomDataset, custom_test_dataset: CustomDataset,
+                         model_for_defect: str = "", btc_size: int = 7_500, figure_name: str = "",
+                         extra_message_txt: str = "", extra_checkpoint_folder_path: str or None = None):
     train_loader = torch.utils.data.DataLoader(dataset=custom_train_dataset, batch_size=btc_size, shuffle=True,
                                                num_workers=8)
     test_loader = torch.utils.data.DataLoader(dataset=custom_test_dataset, batch_size=btc_size, shuffle=True,
                                               num_workers=8)
     if isinstance(model, str):
-        weights_model = torch.load(join(checkpoints_folder, model))
+        if extra_checkpoint_folder_path is None:
+            checkpoint_file_path = join(checkpoints_folder, model)
+        else:
+            checkpoint_file_path = join(checkpoints_folder, extra_checkpoint_folder_path, model)
+        weights_model = torch.load(checkpoint_file_path)
         model_dict = get_dict_from_name(model)
         model_dict['input_shape'] = custom_train_dataset.data.shape[1]
         model = AE(**model_dict)
@@ -364,74 +372,87 @@ def gaussian_autoencoder(model: str or AE,  custom_train_dataset: CustomDataset,
         class_1 = df_test[df_test['Anomaly'] == 1]['Losses']
         del losses, reconstructed, batch, labels, df_losses, test_loader, result_test, df_test
 
-    plot_normal_curve(mean_ml, std_ml, class_0, class_1, model, defect_str=model_for_defect, filename=figure_name)
+    plot_normal_curve(mean_ml, std_ml, class_0, class_1, model, defect_str=model_for_defect, filename=figure_name,
+                      extra_msgs=extra_message_txt)
 
 
+@log_file_dec(".\\log.txt")
 def train_test_one_class_autoencoder(to_test: str, batch_size: int = 7_500, train: bool = None,
                                      number_epoch_train: int = 5, save_train: bool = True, test: bool = False,
                                      figure_test_name: str = "", from_date: str = "", time_series: bool = None,
                                      build_interactive_filter: bool = False, filter_defects: dict or None = None,
-                                     merge_chem_on_iba: bool = False, clean: bool = True, normalize: bool = True):
+                                     merge_chem_on_iba: bool = False, clean: bool = True, normalize: bool = True,
+                                     pcas: [int] or None = None):
     if not train and not test:
         raise KeyError("This function should be used to train or test an autoencoder")
     generator_one_class = get_custom_dataset_one_class_per_defect(from_date=from_date, time_series=time_series,
                                                                   build_interactive_filter=build_interactive_filter,
                                                                   filter_defects=filter_defects,
                                                                   merge_chem_on_iba=merge_chem_on_iba, clean=clean,
-                                                                  normalize=normalize)
-    for custom_train_one, custom_test_one, defect_string in generator_one_class:
+                                                                  normalize=normalize, pcas=pcas)
+    for custom_train_one, custom_test_one, defect_string, pca_tuple in generator_one_class:
         if train:
             model_dict = get_dict_from_name(to_test)
             if save_train:
                 model = train_defect(model_dict=model_dict, data=custom_train_one, batch_size=batch_size,
-                                     epochs=number_epoch_train, save=defect_string)
+                                     epochs=number_epoch_train, save=defect_string, pca_=pca_tuple)
             else:
                 model = train_defect(model_dict=model_dict, data=custom_train_one, batch_size=batch_size,
-                                     epochs=number_epoch_train)
+                                     epochs=number_epoch_train, pca_=pca_tuple)
             del model_dict
         elif train is None:
             model = to_test + defect_string + ".ckpt"
-            if not isfile(join(checkpoints_folder, model)):
+            if pca_tuple is None:
+                checkpoint_to_search = join(checkpoints_folder, model)
+            else:
+                checkpoint_to_search = join(checkpoints_folder, pca_tuple[0], model)
+            if not isfile(checkpoint_to_search):
                 model_dict = get_dict_from_name(model)
                 msg = f"Model checkpoint {model} not found starting training"
                 if save_train:
                     print(msg + " and saving the checkpoint...")
                     model = train_defect(model_dict=model_dict, data=custom_train_one, batch_size=batch_size,
-                                         epochs=number_epoch_train, save=defect_string)
+                                         epochs=number_epoch_train, save=defect_string, pca_=pca_tuple)
                 else:
                     print(msg + "...")
                     model = train_defect(model_dict=model_dict, data=custom_train_one, batch_size=batch_size,
-                                         epochs=number_epoch_train)
+                                         epochs=number_epoch_train, pca_=pca_tuple)
                 del msg, model_dict
             else:
-                msg = f"Model checkpoint {model} found, skipping training..."
+                if pca_tuple is None:
+                    msg = f"Model checkpoint {model} found, skipping training..."
+                else:
+                    msg = f"Model checkpoint ({pca_tuple[0]}\\){model} found, skipping training..."
                 print(msg)
                 del msg
+            del checkpoint_to_search
         else:
             model = to_test + defect_string + ".ckpt"
-        
+
         if test:
+            pca_folder = None
             if figure_test_name == "auto":
+                fold_path = join(".", "Autoencoder results", to_test[:-1])
+                if pca_tuple is not None:
+                    fold_path = join(fold_path, pca_tuple[0])
+                    pca_folder = pca_tuple[0]
+                makedirs(fold_path, exist_ok=True)
                 if isinstance(model, str):  # Give automatically a name to the figure
-                    fold_path = join(".", "Autoencoder results", to_test[:-1])
                     figure_name = join(fold_path, model[:-5])
-                    makedirs(fold_path, exist_ok=True)
                 else:
-                    fold_path = join(".", "Autoencoder results", to_test[:-1])
                     figure_name = join(fold_path, model.name + defect_string)
-                    makedirs(fold_path, exist_ok=True)
             else:
-                figure_name = figure_test_name
+                figure_name = figure_test_name + "_" + defect_string
             gaussian_autoencoder(model=model, custom_train_dataset=custom_train_one,
                                  custom_test_dataset=custom_test_one, model_for_defect=defect_string,
-                                 btc_size=batch_size, figure_name=figure_name)
+                                 btc_size=batch_size, figure_name=figure_name, extra_message_txt=pca_tuple[1],
+                                 extra_checkpoint_folder_path=pca_folder)
 
 
 def score_autoencoder(gaussian_mean: torch.float32, gaussian_std: torch.float32, class_0: pd.Series,
                       class_1: pd.Series) -> pd.DataFrame:
-
     sigmas_for_threshold = (1, 2, 3)
-    column_titles = ("True Positive", "False Positive", "False Negative", "True Negative", "F1-score")
+    column_titles = ["True Positive", "False Positive", "False Negative", "True Negative", "F1-score"]
     result_dataframe = pd.DataFrame(columns=column_titles)
     del column_titles
     for i in sigmas_for_threshold:
@@ -450,8 +471,7 @@ def score_autoencoder(gaussian_mean: torch.float32, gaussian_std: torch.float32,
 
 
 def plot_normal_curve(mean: torch.float32, std_dev: torch.float32, not_defected: pd.Series, defected: pd.Series,
-                      model: AE, defect_str: str, filename: str = ""):
-
+                      model: AE, defect_str: str, filename: str = "", extra_msgs: str = ""):
     title = model.name + " for defect " + defect_str
     legend_0 = f"NOT {defect_str}"
     legend_1 = defect_str
@@ -485,16 +505,29 @@ def plot_normal_curve(mean: torch.float32, std_dev: torch.float32, not_defected:
         df_score = score_autoencoder(mean, std_dev, class_0=not_defected, class_1=defected)
         gfg = df_score.to_markdown(index=True, tablefmt="grid")
         with open(filename + ".txt", "w", encoding="utf-8") as f:
+            f.write(extra_msgs)
             f.write(f'Gaussian curve (Mean: {mean}, Standard deviation: {std_dev})\n')
             print(gfg, file=f)
     else:
         fig.show()
 
 
+def pca_dataset(new_dimensions: int, train_dataset: pd.DataFrame, test_dataset: pd.DataFrame) \
+        -> (pd.DataFrame, pd.DataFrame, str, float):
+    pca = PCA(n_components=new_dimensions)
+    pca.fit(train_dataset)
+    reduced_train_dataset = pca.transform(train_dataset)
+    reduced_test_dataset = pca.transform(test_dataset)
+    var_explained = np.sum(pca.explained_variance_ratio_ * 100)
+    msg = f"PCA with {new_dimensions} dimensions has variance retained (%): "
+    msg += str(var_explained) + "\n"
+    return reduced_train_dataset, reduced_test_dataset, msg, var_explained
+
+
 def main(list_of_autoencoder_name: [str], train_: str = "checkpoint", figure_save: bool = True, batch_size: int = 7_500,
          number_epoch_train: int = 5, save_train: bool = True, test: bool = True, from_date: str = "",
          time_series: bool = None, build_interactive_filter: bool = False, filter_defects: dict or None = None,
-         merge_chem_on_iba: bool = False, clean: bool = True, normalize: bool = True):
+         merge_chem_on_iba: bool = False, clean: bool = True, normalize: bool = True, pcas: [int] or None = None):
     # Set up of the parameter for the function train_test_one_class_autoencoder
     if train_ == "checkpoint" or train_ == "Checkpoint" or train_ == "C":
         train = None
@@ -503,7 +536,7 @@ def main(list_of_autoencoder_name: [str], train_: str = "checkpoint", figure_sav
     elif train_ == "never" or train_ == "Never" or train_ == "N":
         train = False
     else:
-        err_msg = "The train parameter can only be only one of this optinons:\n'checkpoint' to train the model only if "
+        err_msg = "The train parameter can only be only one of this options:\n'checkpoint' to train the model only if "
         err_msg += "there is not checkpoint saved in the working directory\n'always' to always train the model\n'never'"
         err_msg += " to never train the model (if there is no checkpoint file an exception will be raised)"
         raise KeyError(KeyErrorMessage(err_msg))
@@ -519,14 +552,15 @@ def main(list_of_autoencoder_name: [str], train_: str = "checkpoint", figure_sav
                                          figure_test_name=figure_test_name, from_date=from_date,
                                          time_series=time_series, build_interactive_filter=build_interactive_filter,
                                          filter_defects=filter_defects, merge_chem_on_iba=merge_chem_on_iba,
-                                         clean=clean, normalize=normalize)
+                                         clean=clean, normalize=normalize, pcas=pcas)
 
 
 if __name__ == '__main__':
     levels_test = [(80, 50, 30), (128, 64), (140, 120, 100, 80), (120, 100, 80, 50), (128, 80, 64)]
+    pca_list = [140, 120, 110, 100, 90, 80, 70, 60]
     str_levels = list()
     for tup in levels_test:
         lev = [str(t) for t in tup]
         str_levels.append("_".join(lev))
     autoencoder_names = ["Autoencoder_S_" + i + "_" for i in str_levels]
-    main(autoencoder_names)
+    main(autoencoder_names, pcas=pca_list, number_epoch_train=10)
