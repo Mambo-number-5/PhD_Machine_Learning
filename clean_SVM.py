@@ -13,7 +13,7 @@ import numpy as np
 fold = path[0]
 log_file = join(fold, 'Log_SVM.txt')
 svc = SVC()
-gamma_list = [100, 10, 1, 0.5, 0.1, 0.05, 0.1, 'auto', 'scale']
+gamma_list = [10, 1, 0.5, 0.1, 0.05, 0.1, 'auto', 'scale']
 c_list = [0.01, 0.1, 1, 10, 100, 1_000, 5_000]
 
 
@@ -76,5 +76,8 @@ if __name__ == '__main__':
         f_stds = f_train.std()
         f_train = (f_train - f_means) / f_stds
         f_test = (f_test - f_means) / f_stds
+        n_features = f_train.shape[1]
+        far = f_train.values.var()
+        scale = 1 / (n_features * far)
         main_test(grid_search=grid, parameters=hyperparameters, x_train=f_train, y_train=l_train, x_test=f_test,
                   y_test=l_test, defect=i)

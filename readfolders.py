@@ -489,7 +489,7 @@ def generate_clean_dataset(from_date: str = "", timeseries: bool or None = None,
                 x.drop(nanx, inplace=True)
                 labl.drop(nanx, inplace=True)
         else:
-            nanx = x[pd.isnull(x).any(1)].index
+            nanx = x[pd.isnull(x).any(axis=1)].index
             x.drop(nanx, inplace=True)
             labl.drop(nanx, inplace=True)
     return x, labl

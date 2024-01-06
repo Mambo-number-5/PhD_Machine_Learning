@@ -1137,7 +1137,7 @@ NOT DEFECTED       0.97      1.00      0.98     34213
    macro avg       0.54      0.51      0.51     35321
 weighted avg       0.94      0.96      0.95     35321
 
-Trying gaussian kernel with gamma = scale
+Trying gaussian kernel with gamma = scale  # DEPRESSIONE
 Here is the confusion matrix:
 ----------------------CONFUSION MATRIX----------------------|
 -----PREDICTED------|-----------------ACTUAL----------------|
