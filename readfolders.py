@@ -449,17 +449,24 @@ def get_feature_correlation(df: pd.DataFrame, top_n: int or None = None, corr_me
         corr_str = 'Correlation '
 
     corr_matrix_us = corr_matrix.unstack()
-    sorted_correlated_features = corr_matrix_us.sort_values(kind="quicksort", ascending=False).reset_index()
+
+    # Remove duplicates
+    if remove_duplicates:
+        set_unique_feat = set()
+        for t in corr_matrix_us.index:
+            if t[::-1] not in set_unique_feat:
+                set_unique_feat.add(t)
+        corr_matrix_unique = corr_matrix_us.loc[list(set_unique_feat)]
+        sorted_correlated_features = corr_matrix_unique.sort_values(kind="quicksort", ascending=False).reset_index()
+
+    else:
+        sorted_correlated_features = corr_matrix_us.sort_values(kind="quicksort", ascending=False).reset_index()
 
     # Remove comparisons of the same feature
     if remove_self_correlations:
         sorted_correlated_features = sorted_correlated_features[
-            (sorted_correlated_features.level_0 != sorted_correlated_features.level_1)
-        ]
+                (sorted_correlated_features.level_0 != sorted_correlated_features.level_1)]
 
-    # Remove duplicates
-    if remove_duplicates:
-        sorted_correlated_features = sorted_correlated_features.iloc[:-2:2]
 
     # Create meaningful names for the columns
     sorted_correlated_features.columns = ['Feature 1', 'Feature 2', corr_str]
